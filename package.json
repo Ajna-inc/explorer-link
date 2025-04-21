@@ -1,0 +1,32 @@
+{
+  "name": "@ajna-inc/explorer-link",
+  "version": "1.0.0",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "rm -rf dist/* && tsc",
+    "prepare": "yarn build",
+    "lint": "eslint --ext js,ts .",
+    "test": "yarn build && mocha test",
+    "prepublishOnly": "yarn test"
+  },
+  "devDependencies": {
+    "@metamask/eslint-config": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.7.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-mocha": "^10.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^5.2.2"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "description": "A library for generating explorer links.",
+  "main": "dist/index.js",
+  "author": "@ajna-wallet/developers ",
+  "homepage": "https://github.com/block-wallet/explorer-link#readme"
+}
